@@ -1928,17 +1928,17 @@ def bot(op):
 					cl.sendText(msg.to,"Hadir Boss")
 					ki.sendText(msg.to,"Hadir Boss")
 #-----------------------------------------------
-            elif "Tob say " in msg.text:
+            elif "Punkers say " in msg.text:
 					bctxt = msg.text.replace("Tob say ","")
 					cl.sendText(msg.to,(bctxt))
 					ki.sendText(msg.to,(bctxt))
             elif msg.text in ["Creator"]:
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "ua7fb5762d5066629323d113e1266e8ca"}
+					msg.contentMetadata = {'mid': "u0f020150405fe23cace51efbbe590a76"}
 					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "uc8e2c2b906e2322592c6d8f91a0957f7"}
+					msg.contentMetadata = {'mid': "u0f020150405fe23cace51efbbe590a76"}
 					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 #-------------Fungsi Creator Finish-----------------#
@@ -2593,9 +2593,9 @@ def autolike():
 				if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
 					try:    
 						cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-						cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By line:://ti/p/~tobyg74")
+						cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By line:://ti/p/~deadscreamer")
 						kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-						kk.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Channel Youtube : TobyGaming74")
+						kk.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Channel Youtube : https://www.youtube.com/channel/UCOmyJjeJQ2FGJyBJZVTO4aA")
 						print "DiLike"
 					except:
 							pass
