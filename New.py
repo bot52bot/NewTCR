@@ -31,62 +31,62 @@ sys.setdefaultencoding('utf-8')
 # image_path = 'tmp/tmp.jpg'
 
 helpMessage ="""!CommandMember!
-=> Creator
-=> Punkers say
-=> GCreator
-=> .music
-=> .Youtube
+❖ Creator
+❖ Punkers say
+❖ GCreator
+❖ .music
+❖ .Youtube
 
 !Command Creator!
-=> Admin add @
-=> Admin remove @
-=> Adminlist
-=> InviteMeTo:
+❖ Admin add @
+❖ Admin remove @
+❖ Adminlist
+❖ InviteMeTo:
 
 !Command Admin!
-=> Id
-=> Mid
-=> Mid @
-=> Me
-=> Urloff
-=> Urlon
-=> Ginfo
-=> Cancel
-=> Gn
-=> Cname:
-=> Cstatus:
-=> Gcreator:inv
-=> Out
-=> Invite
-=> Cn
-=> Gift
-=> Respon
-=> Tagall
-=> Glist
-=> Spam:
-=> Check > Absen
-=> Steal + Mid
-=> Steal @
+❖ Id
+❖ Mid
+❖ Mid @
+❖ Me
+❖ Urloff
+❖ Urlon
+❖ Ginfo
+❖ Cancel
+❖ Gn
+❖ Cname:
+❖ Cstatus:
+❖ Gcreator:inv
+❖ Out
+❖ Invite
+❖ Cn
+❖ Gift
+❖ Respon
+❖ Tagall
+❖ Glist
+❖ Spam:
+❖ Check > Absen
+❖ Steal + Mid
+❖ Steal @
 
 !Command Mimic!
-=> Mimic:on
-=> Mimic @
-=> Mimic:add: @
-=> Mimic:del: @
-=> ListTarget
+❖ Mimic:on
+❖ Mimic @
+❖ Mimic:add: @
+❖ Mimic:del: @
+❖ ListTarget
 
 !CommandPenting!
-=> Guest On/Off
-=> Mad On/Off
-=> Qr On/Off
-=> Protect On/Off
-=> Ban @ 
-=> Unban @
-=> Kill Ban
-=> Kill @
-=> Nk
-=> Vk
-=> Mayhem
+❖ Guest On/Off
+❖ Mad On/Off
+❖ Qr On/Off
+❖ Protect On/Off
+❖ Ban @ 
+❖ Unban @
+❖ Kill Ban
+❖ Kill @
+❖ Nk
+❖ Vk
+❖ Mayhem
 
 ===================
 Street Punk Bot
@@ -1788,7 +1788,7 @@ def bot(op):
                         gid = cl.getGroupIdsJoined()
                         h = ""
                         for i in gid:
-                            h += "=> %s  \n" % (cl.getGroup(i).name + " | Members : [ " + str(len (cl.getGroup(i).members))+" ]")
+                            h += "❖ %s  \n" % (cl.getGroup(i).name + " | Members : [ " + str(len (cl.getGroup(i).members))+" ]")
                         cl.sendText(msg.to, "#[List Grup]# \n"+ h +"Total Group : " +"[ "+str(len(gid))+" ]")
             elif "Mayhem" in msg.text:
               if msg.from_ in admin:
