@@ -21,7 +21,8 @@ print u"login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""    =====[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅]=====
+helpMessage ="""    ==[Street Punk Command]==
+
 􀜁􀇔􏿿 [Id]
 􀜁􀇔􏿿 [Mid]
 􀜁􀇔􏿿 [Me] 
@@ -58,8 +59,6 @@ helpMessage ="""    =====[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ
 􀜁􀇔􏿿 [Message Confirmation] 
 􀜁􀇔􏿿 [Mybio: 「Isi Bio」]  
 􀜁􀇔􏿿 [Allbio: 「Isi Bio bot」] 
-  
-   [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅ ̶̲̅ɪ̶̲̅ɴ̶̲̅ ̶̲̅G̶̲̅ʀ̶̲̅ᴏ̶̲̅ᴜ̶̲̅ᴘ̶̲̅]
 􀜁􀇔􏿿 [Link on]
 􀜁􀇔􏿿 [Link off] 
 􀜁􀇔􏿿 [Invite「mid」] 
@@ -84,7 +83,7 @@ helpMessage ="""    =====[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ
 􀜁􀇔􏿿 [Staff add/remove @]
          ✯==== Creator ====✯
 	
-  http://line.me/ti/p/~tobyg74
+  http://line.me/ti/p/~deadscreamer
 """
 helo=""
 
@@ -93,8 +92,8 @@ mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
 Bots = [mid,kimid,ki2mid]
-admsa = "ua7fb5762d5066629323d113e1266e8ca"
-admin = "uc8e2c2b906e2322592c6d8f91a0957f7"
+admsa = "u0f020150405fe23cace51efbbe590a76"
+admin = "u0f020150405fe23cace51efbbe590a76"
 
 wait = {
     'contact':False,
@@ -193,7 +192,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u1b3ce3c7bfbbc5f4b5f2f6ded16ba3a5":
+                if msg.from_ == "u0f020150405fe23cace51efbbe590a76":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -353,7 +352,8 @@ def bot(op):
             elif "Bot2" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': ki2mid}
-                ki2.sendMessage(msg)
+                ki2.sendMessage(msg)
+
             elif msg.text in ["Bot1 Gift","Bot1 gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': '3b92ccf5-54d3-4765-848f-c9ffdc1da020',
@@ -1226,7 +1226,7 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "== Bakekok Sider == %s\nthat's it\n\nPeople who have ignored reads\n%skampret lo sider. ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "== List Reader Aktif == \n %s\n\nList Reader Pasif\n%s ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
                         cl.sendText(msg.to, "An already read point has not been set.\n「set」you can send ♪ read point will be created ♪")						
 
@@ -1607,7 +1607,8 @@ def bot(op):
                 text = profile.displayName + "􀜁􀅔􏿿"
                 ki.sendText(msg.to, text)
                 profile = ki3.getProfile()
-                text = profile.displayName + "􀜁􀅔􏿿"
+                text = profile.displayName + "􀜁􀅔􏿿"
+
 #-------------------------------------------------------------------
 
 #------------------------------------------------------------------	
@@ -2014,36 +2015,36 @@ def bot(op):
                         pass
 #-----------------------------------------------
             elif "Kb Key" in msg.text:
-                ki.sendText(msg.to,"""      􀜁􀇔􏿿􀜁􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb1 in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb1 Gift]\n􀜁􀇔􏿿[Kb1 bye]\n\n   
+                ki.sendText(msg.to,"""      􀜁􀇔􏿿􀜁􀇔􏿿 Street Punk 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Punk1 in]\n􀜁􀇔􏿿[1Punkname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Punk1 Gift]\n􀜁􀇔􏿿[Kb1 bye]\n\n   
   
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
+Street Punk Bot
 """)
-                ki2.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb2 in]\n􀜁􀇔􏿿[2Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb2 Gift]\n􀜁􀇔􏿿[Kb2 bye]\n\n     
+                ki2.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Street Punk 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Punk2 in]\n􀜁􀇔􏿿[2Punkname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Punk2 Gift]\n􀜁􀇔􏿿[Kb2 bye]\n\n     
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
+Street Punk Bot
 """)
-                ki3.sendText(msg.to,"""     􀜁􀇔􏿿��􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb3 in]\n􀜁􀇔􏿿[3Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb3 Gift]\n􀜁􀇔􏿿[Kb3 bye]\n\n     
+                ki3.sendText(msg.to,"""     􀜁􀇔􏿿��􀇔􏿿 Street Punk 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Punk3 in]\n􀜁􀇔􏿿[3Punkname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Punk3 Gift]\n􀜁􀇔􏿿[Kb3 bye]\n\n     
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
+Street Punk Bot
 """)
-                ki4.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb4 in]\n􀜁􀇔􏿿[4Aditname:]\n􀜁􀇔������[B Cancel]\n����􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb4 Gift]\n􀜁􀇔􏿿[Kb4 bye]\n\n     
+                ki4.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Street Punk 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Punk4 in]\n􀜁􀇔􏿿[4Punkname:]\n􀜁􀇔������[B Cancel]\n����􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Punk4 Gift]\n􀜁􀇔􏿿[Kb4 bye]\n\n     
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
+Street Punk Bot
 """)
-                ki5.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁����􏿿 \n\n􀜁􀇔����[Kb5 in]\n􀜁􀇔􏿿[5Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb5 Gift]\n􀜁􀇔􏿿[Kb5 bye]\n\n     
+                ki5.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Street Punk 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁����􏿿 \n\n􀜁􀇔����[Punk5 in]\n􀜁􀇔􏿿[5Punkname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Punk5 Gift]\n􀜁􀇔􏿿[Kb5 bye]\n\n     
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞I͛��̏��̵̣̻̝̘͍͊̉ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
+Street Punk Bot
 """)
-                ki6.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb6 in]\n􀜁􀇔􏿿[6Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb6 Gift]\n􀜁􀇔􏿿[Kb6 bye]\n\n     
+                ki6.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Street Punk 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Punk6 in]\n􀜁􀇔􏿿[6Punkname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Punk6 Gift]\n􀜁􀇔􏿿[Kb6 bye]\n\n     
         g
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
+Street Punk Bot
 """)
 #-----------------------------------------------
             elif msg.text in ["Welcome","wc","welcome","Wc"]:
@@ -2540,19 +2541,19 @@ def autolike():
         if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
           try:    
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by SempatPanick.inc\n\nhttp://line.me/ti/p/ECbYR-AJhV")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by SempatPanick.inc\n\nhttp://line.me/ti/p/ECbYR-AJhV")
+            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by SempatPanick.inc\n\nhttp://line.me/ti/p/ECbYR-AJhV")
+            ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             ki3.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki3.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by SempatPanick.inc\n\nhttp://line.me/ti/p/ECbYR-AJhV")
+            ki3.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             ki4.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki4.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by SempatPanick.inc\n\nhttp://line.me/ti/p/ECbYR-AJhV")
+            ki4.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             ki5.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki5.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by SempatPanick.inc\n\nhttp://line.me/ti/p/ECbYR-AJhV")
+            ki5.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             ki6.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki6.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by SempatPanick.inc\n\nhttp://line.me/ti/p/ECbYR-AJhV")
+            ki6.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by RikiStreetPunk https://line.me/ti/~deadscreamer")
             print "Like"
             print "Like"
             print "Like"
