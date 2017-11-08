@@ -354,7 +354,7 @@ def bot(op):
                 msg.contentMetadata = {'mid': ki2mid}
                 ki2.sendMessage(msg)
 
-            elif msg.text in ["Bot1 Gift","Bot1 gift"]:
+            elif msg.text in ["Punk Gift","Punk1 gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': '3b92ccf5-54d3-4765-848f-c9ffdc1da020',
                                     'PRDTYPE': 'THEME',
@@ -369,7 +369,7 @@ def bot(op):
                 msg.text = None
                 cl.sendMessage(msg)
 
-            elif msg.text in ["Bot2 Gift","Bot2 gift"]:
+            elif msg.text in ["Punk2 Gift","Punk2 gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': '3b92ccf5-54d3-4765-848f-c9ffdc1da020',
                                     'PRDTYPE': 'THEME',
@@ -462,17 +462,17 @@ def bot(op):
                 cl.sendMessage(msg)
             elif "Mymid" == msg.text:
                 cl.sendText(msg.to,mid)
-            elif "Pb1 mid" == msg.text:
+            elif "Punk1 mid" == msg.text:
                 ki.sendText(msg.to,kimid)
-            elif "Pb2 mid" == msg.text:
+            elif "Punk2 mid" == msg.text:
                 ki2.sendText(msg.to,ki2mid)
-            elif "Pb3 mid" == msg.text:
+            elif "Punk3 mid" == msg.text:
                 ki3.sendText(msg.to,kimid)
-            elif "Pb4 mid" == msg.text:
+            elif "Punk4 mid" == msg.text:
                 ki4.sendText(msg.to,ki2mid)
-            elif "Pb5 mid" == msg.text:
+            elif "Punk5 mid" == msg.text:
                 ki5.sendText(msg.to,kimid)
-            elif "Pb6 mid" == msg.text:
+            elif "Punk6 mid" == msg.text:
                 ki6.sendText(msg.to,ki2mid)
             elif "all mid" == msg.text:
                 ki.sendText(msg.to,kimid)
@@ -505,7 +505,7 @@ def bot(op):
                     cl.sendText(msg.to,"􀜁􀇔􏿿Update Names👉 " + string + "👈")
 
 #-------------Fungsi Tag All Start---------------#
-            elif msg.text in ["Cipok","Tagall"]:
+            elif msg.text in ["Sepi","Tagall"]:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
 
@@ -534,7 +534,7 @@ def bot(op):
 #-------------Fungsi Tag All Finish---------------#
 
 #---------------------------------------------------------
-            elif "1name:" in msg.text:
+            elif "1Punkname:" in msg.text:
                 string = msg.text.replace("1name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
@@ -542,7 +542,7 @@ def bot(op):
                     cl.updateProfile(profile)
                     cl.sendText(msg.to,"􀜁􀇔��Update Names👉" + string + "👈")
 #--------------------------------------------------------
-            elif "2name:" in msg.text:
+            elif "2Punkname:" in msg.text:
                 string = msg.text.replace("2name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki2.getProfile()
@@ -1855,7 +1855,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki.updateGroup(G)
 #-----------------------------------------------
-            elif "Kb1 in" in msg.text:
+            elif "Punk1 in" in msg.text:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1871,7 +1871,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki.updateGroup(G)
 #-----------------------------------------------
-            elif "Kb2 in" in msg.text:
+            elif "Punk2 in" in msg.text:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1887,7 +1887,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki2.updateGroup(G)
 #-----------------------------------------------
-            elif "Kb3 in" in msg.text:
+            elif "Punk3 in" in msg.text:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1903,7 +1903,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki2.updateGroup(G)
 #-----------------------------------------------
-            elif "Kb4 in" in msg.text:
+            elif "Punk4 in" in msg.text:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1919,7 +1919,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki3.updateGroup(G)
 #-----------------------------------------------
-            elif "Kb5 in" in msg.text:
+            elif "Punk5 in" in msg.text:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1935,7 +1935,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki5.updateGroup(G)
 #-----------------------------------------------
-            elif "Kb6 in" in msg.text:
+            elif "Punk6 in" in msg.text:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -2014,7 +2014,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Kb Key" in msg.text:
+            elif "Punk Key" in msg.text:
                 ki.sendText(msg.to,"""      􀜁􀇔􏿿􀜁􀇔􏿿 Street Punk 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Punk1 in]\n􀜁􀇔􏿿[1Punkname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Punk1 Gift]\n􀜁􀇔􏿿[Kb1 bye]\n\n   
   
         
