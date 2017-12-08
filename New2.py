@@ -114,7 +114,7 @@ wait = {
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "Protectguest":False,
+    "Protectguest":False
     "Protectcancel":False,
     "protectionOn":True,
     "atjointicket":True
